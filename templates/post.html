@@ -14,7 +14,7 @@
         <div class="content">
             <div class="card">
                 {%    for blog_post in posts:   %}
-                    {% if blog_post["id"]|int() == post_id|int(): %}
+                    {% if blog_post["id"] == post_id|int(): %}
                         <h1> {{ blog_post["title"] }}</h1>
                         <h2> {{ blog_post["subtitle"] }}</h2>
                         <h2> {{ blog_post["body"] }}</h2>
